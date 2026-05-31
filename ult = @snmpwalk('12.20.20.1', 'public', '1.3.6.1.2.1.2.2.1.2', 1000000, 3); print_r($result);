@@ -1,0 +1,20 @@
+array(9) {
+  [0]=>
+  string(12) "STRING: "lo""
+  [1]=>
+  string(15) "STRING: "wlan1""
+  [2]=>
+  string(16) "STRING: "ether1""
+  [3]=>
+  string(16) "STRING: "ether2""
+  [4]=>
+  string(16) "STRING: "ether3""
+  [5]=>
+  string(16) "STRING: "ether4""
+  [6]=>
+  string(16) "STRING: "ether5""
+  [7]=>
+  string(15) "STRING: "Lokal""
+  [8]=>
+  string(23) "STRING: "<pppoe-herex>""
+}
