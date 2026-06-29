@@ -1,0 +1,15 @@
+{
+    "data": [
+        {
+            "invoice_id": 5,
+            "customer_id": 17,
+            "amount": 100,
+            "payment_method": "cash",
+            "midtrans_id": null,
+            "proof_of_payment": "payments/cash/aJ0xnYTXsGUN96Knw9LwqVFS8M1uYc6Dm9ET4Xy4.png",
+            "status": "success",
+            "created_at": "2026-05-28T04:49:49.000000Z",
+            "updated_at": "2026-05-28T04:49:49.000000Z"
+        }
+    ]
+}
