@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use App\Http\Controllers\ComplaintController;
 use App\Http\Controllers\ResourceController;
+use App\Http\Controllers\BillingController;
 
 Route::get('/', function () {
     return Inertia::render('Welcome', [
@@ -26,6 +27,10 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
     Route::get('/dashboard', [ResourceController::class, 'dashboard'])->name('dashboard');
 
+    // Billing
+    Route::get('/billing/data', [BillingController::class, 'getBillingData'])->name('billing.data');
+    Route::get('/billing/payment-history', [BillingController::class, 'paymentHistory'])->name('billing.payment-history');
+    Route::get('/billing/payment-history/data', [BillingController::class, 'getPaymentHistoryData'])->name('billing.payment-history.data');
 
     // Complaint / Ticket System
     Route::get('/complaints', [ComplaintController::class, 'index'])->name('complaints.index');

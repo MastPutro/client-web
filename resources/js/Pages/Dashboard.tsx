@@ -2,6 +2,7 @@ import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout';
 import { Head, usePage } from '@inertiajs/react';
 import TrafficChart from '@/Components/Traffic/TrafficChart';
 import TrafficWidget from '@/Components/Traffic/TrafficWidget';
+import BillingWidget from '@/Components/Billing/BillingWidget';
 
 export default function Dashboard() {
     const user = usePage().props.auth.user;
@@ -40,6 +41,9 @@ export default function Dashboard() {
                                     autoRefresh={true}
                                     refreshInterval={3000}
                                 />
+                            </div>
+                            <div>
+                                <BillingWidget />
                             </div>
                         </div>
                     </div>

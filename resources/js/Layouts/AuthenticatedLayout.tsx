@@ -44,6 +44,15 @@ export default function Authenticated({
                                 </NavLink>
                             </div>
 
+                            <div className="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                                <NavLink
+                                    href={route('billing.payment-history')}
+                                    active={route().current('billing.payment-history')}
+                                >
+                                    Pembayaran
+                                </NavLink>
+                            </div>
+
                         </div>
 
                         <div className="hidden sm:ms-6 sm:flex sm:items-center">
@@ -155,6 +164,15 @@ export default function Authenticated({
                             active={route().current('complaints.index')}
                         >
                             Complaint
+                        </ResponsiveNavLink>
+                    </div>
+
+                    <div className="space-y-1 pb-3 pt-2">
+                        <ResponsiveNavLink
+                            href={route('billing.payment-history')}
+                            active={route().current('billing.payment-history')}
+                        >
+                            Pembayaran
                         </ResponsiveNavLink>
                     </div>
 
